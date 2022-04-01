@@ -28,15 +28,17 @@ get_header();
     </div>
 
 
-    <div class="industrias-wrapper bg-util-gray" id="industrias-wrapper">
+    <div class="bg-util-gray py-5">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-2"><img src="<?= get_template_directory_uri()?>/assets/images/industrias-01.png" alt=""></div>
-                <div class="col-xxl-2"><img src="" alt=""></div>
-                <div class="col-xxl-2"><img src="" alt=""></div>
-                <div class="col-xxl-2"><img src="" alt=""></div>
-                <div class="col-xxl-2"><img src="" alt=""></div>
-                <div class="col-xxl-2"><img src="" alt=""></div>
+                <ul class="industrias-bar">
+                    <li><img src="<?= get_template_directory_uri() ?>/assets/images/industrias-01.png" alt=""><a href="#telecomunicaciones">Telco</a></li>
+                    <li><img src="<?= get_template_directory_uri() ?>/assets/images/industrias-02.png" alt=""><a href="#distribucion">Distribución y retail</a></li>
+                    <li><img src="<?= get_template_directory_uri() ?>/assets/images/industrias-03.png" alt=""><a href="#educacion">Educación</a></li>
+                    <li><img src="<?= get_template_directory_uri() ?>/assets/images/industrias-04.png" alt=""><a href="#seguros">Seguros</a></li>
+                    <li><img src="<?= get_template_directory_uri() ?>/assets/images/industrias-05.png" alt=""><a href="#automotriz">Automotriz</a></li>
+                    <li><img src="<?= get_template_directory_uri() ?>/assets/images/industrias-06.png" alt=""><a href="#salud">Salud</a></li>
+                </ul>
             </div>
         </div>
     </div>

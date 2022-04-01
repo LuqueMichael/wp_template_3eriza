@@ -8,11 +8,17 @@
     document.getElementById('js-preloader').classList.add('loaded');
   }
 
+  document.querySelector('.industrias-bar').addEventListener("click", (e) => {    
+    e.preventDefault()
+    let el = e.target.closest('li').querySelector('a')
+    document.querySelector(el.getAttribute('href')).scrollIntoView()
+  })
+
   var siteSticky = function () {
     $(".js-sticky-header").sticky({ topSpacing: 0 });
   };
   siteSticky();
-  
+
   var siteMenuClone = function () {
     $('.js-clone-nav').each(function () {
       var $this = $(this);
@@ -34,12 +40,12 @@
         counter++;
       });
     }, 1000);
-  
+
     $('body').on('click', '.arrow-collapse', function (e) {
       var $this = $(this)
-      
+
       console.log("click")
-  
+
       if ($this.closest('li').find('.collapse').hasClass('show')) {
         $this.removeClass('active')
       } else {
@@ -47,22 +53,22 @@
       }
       e.preventDefault()
     });
-  
+
     $(window).resize(function () {
       var $this = $(this),
         w = $this.width();
-  
+
       if (w > 768) {
         if ($('body').hasClass('offcanvas-menu')) {
           $('body').removeClass('offcanvas-menu');
         }
       }
     })
-  
+
     $('body').on('click', '.js-menu-toggle', function (e) {
       var $this = $(this);
       e.preventDefault();
-  
+
       if ($('body').hasClass('offcanvas-menu')) {
         $('body').removeClass('offcanvas-menu');
         $this.removeClass('active');
@@ -71,7 +77,7 @@
         $this.addClass('active');
       }
     })
-  
+
     // click outisde offcanvas
     $(document).mouseup(function (e) {
       var container = $(".site-mobile-menu");

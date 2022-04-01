@@ -31,59 +31,65 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-xl-4">
-                    <div class="col-12 col-md-6 col-xl-12">
-                        <div class="contact-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"">
-                                    <div class=" contact-icon">
-                            <i class="lni lni-phone"></i>
+                    <div class="d-flex contact-item">
+                        <div class="flex-shrink-0">
+                            <div class="contact-icon">
+                                <i class="lni lni-phone"></i>
+                            </div>
                         </div>
-                        <div class="contact-content">
+                        <div class="flex-grow-1 ms-3">
                             <h4>Contacto</h4>
                             <p>(01) 5003577</p>
                             <p>contacto@3eriza.pe</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-12">
-                        <div class="contact-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"">
-                                    <div class=" contact-icon">
-                            <i class="lni lni-map-marker"></i>
+                    <div class="d-flex contact-item">
+                        <div class="flex-shrink-0">
+                            <div class="contact-icon">
+                                <i class="lni lni-map-marker"></i>
+                            </div>
                         </div>
-                        <div class="contact-content">
+                        <div class="flex-grow-1 ms-3">
                             <h4>Dirección</h4>
                             <p>Calle Los Halcones 102 Surquillo</p>
                             <p>Lima - Perú</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-12">
-                        <div class="contact-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s"">
-                                    <div class=" contact-icon">
-                            <i class="lni lni-alarm-clock"></i>
+                    <div class="d-flex contact-item">
+                        <div class="flex-shrink-0">
+                            <div class="contact-icon">
+                                <i class="lni lni-alarm-clock"></i>
+                            </div>
                         </div>
-                        <div class="contact-content">
+                        <div class="flex-grow-1 ms-3 mb-3">
                             <h4>Atencion</h4>
                             <p>Horario de Oficina: 9:00 AM - 6:00 PM</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-8">
-                    <div class="section-title text-center ">
-                        <h2>
-                            ¿Cómo Podemos Ayudarte?
-                        </h2>
-                        <p>
-                            Ponemos a tu disposición este canal para que puedas enviarnos cualquier duda, comentario o sugerencia que tengas con respecto a nuestros servicios.
-                        </p>
+                    <div class="row contact-form-wrapper">
+                        <div class="col-12">
+                            <div class="section-title text-center ">
+                                <h2>¿Cómo Podemos Ayudarte?</h2>
+                                <p>Ponemos a tu disposición este canal para que puedas enviarnos cualquier duda, comentario o sugerencia que tengas con respecto a nuestros servicios.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 m-auto">
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                            <script>
+                                hbspt.forms.create({
+                                    portalId: "4934520",
+                                    formId: "2e432d5d-0169-48aa-a0b5-5414a663ff39"
+                                });
+                            </script>
+                        </div>
                     </div>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                    <script>
-                        hbspt.forms.create({
-                            portalId: "4934520",
-                            formId: "2e432d5d-0169-48aa-a0b5-5414a663ff39"
-                        });
-                    </script>
                 </div>
             </div>
-        </div>
-        <div class="contact-form-wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"">
+    </section>
+
+    <!-- --<div class="contact-form-wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"">
                         <div class=" row">
             <div class="col-xl-10 col-lg-8 mx-auto">
 
@@ -93,8 +99,7 @@ get_header();
             <div class="col-lg-8 m-auto">
 
             </div>
-        </div>
-    </section>
+        </div>-->
 
     <section class="map-section pb-0">
         <div class="map-container">
