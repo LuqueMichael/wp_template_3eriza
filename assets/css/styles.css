@@ -1824,6 +1824,32 @@ ul.industrias-bar li img {
   filter: invert(1);
 }
 
+ul.industrias-bar.home li .icon{
+    margin-bottom: 1rem;
+    background: #ffa700;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+ul.industrias-bar.home li a{
+  font-size: inherit;
+  max-width: inherit;
+}
+ul.industrias-bar.home li i{
+  position: relative;
+  font-size: 2.5rem;
+  z-index: 1;
+  color: #fff;
+}
+
+ul.industrias-bar.home li p.text{
+  line-height: 1.5;
+}
+
 @media ( max-width: 795px ) {
   ul.industrias-bar{
     display: contents;

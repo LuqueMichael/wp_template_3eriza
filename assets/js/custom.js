@@ -8,11 +8,13 @@
     document.getElementById('js-preloader').classList.add('loaded');
   }
 
-  document.querySelector('.industrias-bar').addEventListener("click", (e) => {    
-    e.preventDefault()
-    let el = e.target.closest('li').querySelector('a')
-    document.querySelector(el.getAttribute('href')).scrollIntoView()
-  })
+  if (document.querySelector('.industrias-bar')) {
+    document.querySelector('.industrias-bar').addEventListener("click", (e) => {
+      e.preventDefault()
+      let el = e.target.closest('li').querySelector('a')
+      document.querySelector(el.getAttribute('href')).scrollIntoView()
+    })
+  }
 
   var siteSticky = function () {
     $(".js-sticky-header").sticky({ topSpacing: 0 });

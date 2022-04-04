@@ -125,6 +125,30 @@ $tree_posts = get_posts(array('numberposts' => 3));
     </div>
 </div>
 
+<div class="bg-util-gray py-5">
+    <div class="container">
+        <div class="row">
+            <ul class="industrias-bar home">
+                <li class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="icon"><i class="lni lni-stats-up"></i></div>
+                    <a>Resultados esperados</a>
+                    <p class="text">Nuestra meta es tu crecimiento. Encuentra en nosotros un socio estratégico para el logro de objetivos.</p>
+                </li>
+                <li class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <div class="icon"><i class="lni lni-consulting"></i></div>
+                    <a>Especialistas en tus procesos</a>
+                    <p class="text">Contamos con el conocimiento y experiencia para implementar soluciones a la medida de nuestros clientes, con resultados tangibles.</p>
+                </li>
+                <li class="wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="icon"><i class="lni lni-handshake"></i></div>
+                    <a>Concéntrate en tu Core Business</a>
+                    <p class="text">Optimiza tus recursos, dejando tus procesos no clave en manos de un especialista.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <div id="services" class="services section">
     <div class="container">
         <div class="row">
