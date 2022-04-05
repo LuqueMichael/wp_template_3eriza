@@ -1850,6 +1850,11 @@ ul.industrias-bar.home li p.text{
   line-height: 1.5;
 }
 
+.section-items.order1 .box-item {
+  margin-bottom: 1em;
+  min-height: 135px;
+}
+
 @media ( max-width: 795px ) {
   ul.industrias-bar{
     display: contents;
@@ -4148,11 +4153,11 @@ PAGE BLOG
   height: 2px;
 }
 
-.frontoffice .section-items .box-item {
+.section-items .box-item {
   margin-bottom: 3.5rem;
 }
 
-.frontoffice .section-items.left .text {
+.section-items.left .text {
   margin-left: 0;
   margin-right: 1rem;
 }
