@@ -1,6 +1,6 @@
 <footer>
   <!-- Footer -->
-  <div class="footer bg-gray position-relative" style="z-index: 9999">
+  <div class="footer bg-gray position-relative">
     <div class="container">
       <div class="row d-flex justify-content-between">
         <div class="col-12 col-md-12 mb-5 text-md-center col-lg-2">
