@@ -135,6 +135,26 @@
     }
   });
 
+  $('.loop-incognito').owlCarousel({
+    center: true,
+    items: 1,
+    loop: true,
+    autoplay: true,
+    nav: true,
+    margin: 0,
+    responsive: {
+      1200: {
+        items: 3
+      },
+      992: {
+        items: 3
+      },
+      760: {
+        items: 2
+      }
+    }
+  });
+
 
   // Menu Dropdown Toggle
   if ($('.menu-trigger').length) {

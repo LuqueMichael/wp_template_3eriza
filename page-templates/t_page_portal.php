@@ -3,8 +3,6 @@
 Template Name: Home Page
 */
 
-use App\Controllers\Home;
-
 $one_post = get_posts(array('numberposts' => 1))[0];
 $tree_posts = get_posts(array('numberposts' => 3));
 
