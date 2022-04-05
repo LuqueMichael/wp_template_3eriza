@@ -315,7 +315,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
             <div class="col-lg-12">
                 <div class="loop owl-carousel" style="z-index: 1000">
                     <div class="item">
-                        <a href="#">
+                        <a href="https://qnextplus.com/" target="_blank">
                             <div class="portfolio-item">
                                 <div class="thumb">
                                     <img src="<?= get_template_directory_uri() ?>/assets/images/s-qnextplus.png" alt="">
@@ -328,7 +328,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="http://talentqr.com/" target="_blank">
                             <div class="portfolio-item">
                                 <div class="thumb">
                                     <img src="<?= get_template_directory_uri() ?>/assets/images/s-talentqr.png" alt="">
@@ -341,7 +341,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="https://3eriza.pe/ebox/" target="_blank">
                             <div class="portfolio-item">
                                 <div class="thumb">
                                     <img src="<?= get_template_directory_uri() ?>/assets/images/s-ebox.png" alt="">
@@ -354,7 +354,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="https://helpy.pe/" target="_blank">
                             <div class="portfolio-item">
                                 <div class="thumb">
                                     <img src="<?= get_template_directory_uri() ?>/assets/images/s-helpy.png" alt="">
@@ -367,7 +367,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="<?= home_url('/cliente-incognito')?>" target="_blank">
                             <div class="portfolio-item">
                                 <div class="thumb">
                                     <img src="<?= get_template_directory_uri() ?>/assets/images/s-clienteincog.png" alt="">
