@@ -3844,6 +3844,10 @@ NAVBAR TOP
 .site-mobile-menu .site-nav-wrap a:hover {
   color: #f6a500;
 }
+.site-mobile-menu .site-nav-wrap a:active {
+  background-color: #f6a500;
+  color: #fff;
+}
 
 .site-mobile-menu .site-nav-wrap li {
   position: relative;
@@ -4688,4 +4692,11 @@ PAGE BLOG
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
   width: 20px;
+}
+
+body.modal-open::before{
+  z-index: 2000;
+}
+body.modal-open .sticky-wrapper{
+  z-index: 1;
 }
