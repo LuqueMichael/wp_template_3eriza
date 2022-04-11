@@ -197,7 +197,7 @@ get_header();
                         <div class="line-dec m-auto"></div>
                     </div>
                 </div>
-                <div class="col-lg-9 m-auto">
+                <div class="col-xxl-9 col-lg-12 m-auto">
                     <p class="text text-center mb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         Este sector está experimentando un crecimiento de la competencia, lo que demanda a las instituciones a concentrar sus energías en incrementar las inscripciones y entregar una educación de calidad mediante los contenidos y conocimientos impartidos, personal e infraestructura. En lo que respecta a actividades que no son core de la industria, 3ERIZA cuenta con soluciones y servicios de outsourcing que contribuirán al cumplimiento de las metas de la institución.
                     </p>

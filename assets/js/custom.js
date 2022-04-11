@@ -108,11 +108,35 @@
     var header = $('header').height();
 
     if (scroll >= box - header) {
-      $("header").addClass("background-header");
+      $("header").addClass("background-header")      
     } else {
-      $("header").removeClass("background-header");
+      $("header").removeClass("background-header")      
+    }
+
+    if(scroll >= 50){
+      document.querySelector('.yaqua').classList.add('min')
+    }else if( scroll <= 0 ){
+      document.querySelector('.yaqua').classList.remove('min')
     }
   });
+
+  document.querySelector('.yaqua, .btn-close-yaqua').addEventListener('click', (e) => {
+    e.preventDefault()
+    var node = e.target.nodeName    
+
+    if( e.target.closest('.btn-close-yaqua') ){
+      e.target.closest('.yaqua').classList.add('min')
+    }else{
+      document.querySelector('.yaqua').classList.remove('min')
+    }
+
+    if(!e.target.closest('.yaqua').classList.contains('min')){
+      if( node == "A" ){
+        window.open(e.target.getAttribute('href'))
+      }
+    }
+   
+  })
 
 
   $('.loop').owlCarousel({

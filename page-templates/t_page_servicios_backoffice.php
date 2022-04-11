@@ -41,9 +41,9 @@ get_header();
                         Ayudamos a externalizar procesos de negocio apoyándonos en tecnología innovadora, equipo con años de experiencia garantizando seguridad y confidencialidad, nuestros servicios de soporte para empresas ayudan a hacer mas eficientes sus costos fijos operativos, optimizar en personas y mejorar su capacidad de respuesta productiva.
                     </p>
                 </div>
-                <div class="col-lg-9 m-auto">
+                <div class="col-xxl-9 col-lg-12 m-auto">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 d-flex align-items-center">
                             <div class="section-items">
                                 <div class="box-item d-flex right  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".8s">
                                     <div class="flex-fill text text-end">
@@ -68,8 +68,8 @@ get_header();
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="service-image shadow wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="col-lg-4 d-flex align-items-center">
+                            <div class="service-image m-auto shadow wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                 <img src="https://3eriza.pe/wp-content/uploads/2021/10/backoffice-500x1024.jpg" alt="" class="img-fluid rounded-3">
                             </div>
                         </div>
@@ -78,77 +78,8 @@ get_header();
             </div>
         </div>
     </div>
-
-    <div id="industrias" class="industrias mt-0">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h4>Industrias en las que nos especializamos</h4>
-                        <div class="line-dec"></div>
-                    </div>
-                </div>
-                <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                    <div class="fill-form p-0">
-                        <div class="row">
-                            <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                                <div class="info-post">
-                                    <div class="icon">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-01.png" alt="">
-                                        <a href="#">Telco</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                                <div class="info-post">
-                                    <div class="icon">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-02.png" alt="">
-                                        <a href="#">Distribución y retail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                                <div class="info-post">
-                                    <div class="icon">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-03.png" alt="">
-                                        <a href="#">Educación</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                                <div class="info-post">
-                                    <div class="icon">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-04.png" alt="">
-                                        <a href="#">Seguros</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                                <div class="info-post">
-                                    <div class="icon">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-05.png" alt="">
-                                        <a href="#">Automotriz</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                                <div class="info-post">
-                                    <div class="icon">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-06.png" alt="">
-                                        <a href="#">Salud</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 pt-5">
-                                <div class="border-first-button m-auto"><a href="#">Ver Más</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
+    <?= get_template_part('template-parts/content','section-industrias')?>
    
     <!-- FORM CONTACTO -->
     <section id="contacto" class="section contact-section position-relative decoration-util-1">

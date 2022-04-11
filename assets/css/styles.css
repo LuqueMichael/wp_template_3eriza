@@ -216,6 +216,11 @@ body {
   border-color: #f6a500;
 }
 
+.section {
+  padding: 10rem 0;
+  position: relative;
+}
+
 .section .container {
   position: relative;
   z-index: 9;
@@ -247,13 +252,19 @@ body {
   align-items: center;
 }
 
-.close-btn-modal i{ transition: ease all .3s;}
-.close-btn-modal:hover i{ transform: rotate(360deg);}
+.close-btn-modal i {
+  transition: ease all .3s;
+}
+
+.close-btn-modal:hover i {
+  transform: rotate(360deg);
+}
 
 .close-btn-modal:hover {
   background: #ffa700;
 }
-.close-btn-modal::after{
+
+.close-btn-modal::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -263,6 +274,16 @@ body {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 15px solid #ffa700;
+}
+
+@media(max-width: 580px) {
+  .close-btn-modal {
+    top: 5px;
+  }
+
+  .close-btn-modal::after {
+    border: 0;
+  }
 }
 
 .decoration-util-1::before {
@@ -441,6 +462,23 @@ body {
 .border-first-button>a:hover {
   background-color: #f6a500;
   color: #fff !important;
+}
+
+.first-button a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  color: #fff !important;
+  background: #f6a500 !important;
+  border: 1px solid #f6a500;
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all .5s;
+}
+
+.first-button>a:hover {
+  background: transparent !important;
+  color: #f0aa1e !important;
 }
 
 .shadow-blue {
@@ -1902,13 +1940,14 @@ ul.industrias-bar.home li p.text {
   min-height: 135px;
 }
 
+.home ul.industrias-bar{
+  grid-template-columns: none;
+}
+
 @media (max-width: 795px) {
   ul.industrias-bar {
-    display: contents;
-  }
-
-  ul.industrias-bar li {
-    min-width: 175px;
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
   }
 
   /* FIX HEIGHT UN TARGETS */
@@ -2208,7 +2247,8 @@ Blog
   line-height: 1.5;
 }
 
-.post-item-blog article>h2, h3 {
+.post-item-blog article h2,
+.post-item-blog article h3 {
   font-weight: 700;
   margin-top: 60px;
 }
@@ -2584,10 +2624,6 @@ form#contact button:hover {
   width: auto !important;
 }
 
-.section {
-  padding: 10rem 0;
-}
-
 .nosotros-page .section {
   padding: 15rem 0;
 }
@@ -2605,6 +2641,16 @@ Team Sections
 .team .team-item {
   position: relative;
   z-index: 1;
+}
+
+.team-item figure img {
+  width: 100% !important;
+  transition: transform 0.5s ease-in-out;
+}
+
+.team-item:hover figure img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
 }
 
 .team:after {
@@ -3841,10 +3887,10 @@ NAVBAR TOP
   color: #212529;
 }
 
-.site-mobile-menu .site-nav-wrap a:hover {
+.site-mobile-menu .site-nav-wrap a:hover,
+.site-mobile-menu .site-nav-wrap a:active,
+.site-mobile-menu .site-nav-wrap .dropdown-item.active, .dropdown-item:active {
   color: #f6a500;
-}
-.site-mobile-menu .site-nav-wrap a:active {
   background-color: #f6a500;
   color: #fff;
 }
@@ -4694,9 +4740,141 @@ PAGE BLOG
   width: 20px;
 }
 
-body.modal-open::before{
+body.modal-open::before {
   z-index: 2000;
 }
-body.modal-open .sticky-wrapper{
+
+body.modal-open .sticky-wrapper {
   z-index: 1;
+}
+
+.page-empleos .info-text .main-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 1rem;
+  background: #fcb52e;
+  color: #fff;
+  -webkit-transition: all .3s ease-out 0s;
+  -moz-transition: all .3s ease-out 0s;
+  -ms-transition: all .3s ease-out 0s;
+  -o-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s;
+}
+
+.page-empleos .info-text .main-icon i {
+  font-size: 3rem;
+}
+
+
+
+/******************************************/
+/*              YAQUA  BUTTON             */
+/******************************************/
+.yaqua-wrapper {
+  background: #fff;
+  width: 290px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 35px 7px 30px 0 #c3c3c3;
+  position: fixed;
+  top: 40%;
+  z-index: 9999;
+  right: -2.7rem;
+  transform: scale(.7) translateY(-50%);
+  transition: ease .2s all;
+}
+
+.yaqua-wrapper:hover {
+  transform: scale(1) translateY(-50%) translateX(-40px);
+}
+.yaqua.min .yaqua-wrapper:hover {
+  transform: scale(.8) translateY(-30%);
+}
+
+.yaqua-wrapper .thumb {
+  height: 350px;
+  background: url(https://3eriza.pe/wp-content/uploads/2021/11/yaqua-childs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.yaqua-wrapper .yaqua-content {
+  padding: 1.2rem 1.2rem 2.5rem;
+  color: #00b9eb;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+.yaqua-wrapper .yaqua-content h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0;
+  color: #0bbcec !important;
+  line-height: 1.2;
+}
+
+.yaqua-wrapper .yaqua-content a {
+  color: #00b9eb;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.yaqua-wrapper .foot {
+  height: 50px;
+  display: block;
+  background: url(https://3eriza.pe/wp-content/uploads/2021/11/yaqua-foot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.yaqua .btn-close-yaqua{
+  position: absolute;
+  background: rgba(255,255,255,.6);
+  font-size: 2rem;
+  padding: .5rem 1rem;
+  color: #fff;
+}
+
+/* HOVER */
+.yaqua.hover .yaqua-wrapper{ 
+  transform: scale(.7) translateY(50%);
+}
+
+
+/* MIN */
+
+.yaqua.min .yaqua-wrapper {
+  width: 105px;
+  right: -3px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ccc;
+  top: unset !important;
+  bottom: 3rem;
+}
+
+.yaqua.min h1 {
+  position: absolute;
+  top: -4rem;
+  width: 160px;
+  font-size: 17px !important;
+  left: -4rem;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.yaqua.min .thumb,
+.yaqua.min p {
+  display: none;
+}
+
+.yaqua.min .btn-close-yaqua{
+  display: none;
 }

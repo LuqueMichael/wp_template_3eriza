@@ -55,7 +55,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
                         <div class="about-right-content">
                             <div class="section-heading">
                                 <h6>Nosotros</h6>
-                                <h4>Que es <em>3Eriza</em></h4>
+                                <h4>Qué es <em>3Eriza</em></h4>
                                 <div class="line-dec"></div>
                             </div>
                             <p>Somos una empresa tercerizadora de servicios profesionales, que brinda soluciones enfocadas a negocios, a través de la gestión de procesos, empleando capital humano especializado y tecnología.</p>
@@ -123,7 +123,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
     </div>
 </div>
 
-<div class="bg-util-gray py-5">
+<div class="home bg-util-gray py-5">
     <div class="container">
         <div class="row">
             <ul class="industrias-bar home">
@@ -452,75 +452,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
     </div>
 </div>
 
-<div id="industrias" class="industrias">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8 m-auto">
-                <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <h4>Industrias en las que nos especializamos</h4>
-                    <div class="line-dec"></div>
-                </div>
-            </div>
-            <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                <div class="fill-form p-0">
-                    <div class="row">
-                        <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                            <div class="info-post">
-                                <div class="icon">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-01.png" alt="">
-                                    <a href="#">Telco</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                            <div class="info-post">
-                                <div class="icon">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-02.png" alt="">
-                                    <a href="#">Distribución y retail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                            <div class="info-post">
-                                <div class="icon">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-03.png" alt="">
-                                    <a href="#">Educación</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                            <div class="info-post">
-                                <div class="icon">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-04.png" alt="">
-                                    <a href="#">Seguros</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                            <div class="info-post">
-                                <div class="icon">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-05.png" alt="">
-                                    <a href="#">Automotriz</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-6 col-lg-3 col-xl-2">
-                            <div class="info-post">
-                                <div class="icon">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/industrias-06.png" alt="">
-                                    <a href="#">Salud</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 pt-5">
-                            <div class="border-first-button m-auto"><a href="<?= home_url() ?>/industrias">Ver Más</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= get_template_part('template-parts/content','section-industrias')?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
