@@ -4856,11 +4856,10 @@ body.modal-open .sticky-wrapper {
   width: 90px;
   border-radius: 50%;
   box-shadow: 0 0 5px #c3c3c3;
-  overflow: hidden;  
   animation: translatePosition .5s both;
 }
 .yaqua.min .yaqua-wrapper .yaqua-content{
-  padding: 1.5rem .5rem;
+  padding: 1.34rem .5rem;
   height: 90px;
 }
 
