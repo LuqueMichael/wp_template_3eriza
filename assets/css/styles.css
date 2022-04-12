@@ -1940,7 +1940,7 @@ ul.industrias-bar.home li p.text {
   min-height: 135px;
 }
 
-.home ul.industrias-bar{
+.home ul.industrias-bar {
   grid-template-columns: none;
 }
 
@@ -4776,24 +4776,20 @@ body.modal-open .sticky-wrapper {
 /******************************************/
 /*              YAQUA  BUTTON             */
 /******************************************/
+.yaqua {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+  z-index: 999;
+  animation: yaquaIn 2s both;
+}
+
 .yaqua-wrapper {
   background: #fff;
   width: 290px;
   border-bottom-right-radius: 50px;
   box-shadow: 35px 7px 30px 0 #c3c3c3;
-  position: fixed;
-  top: 40%;
-  z-index: 9999;
-  right: -2.7rem;
-  transform: scale(.7) translateY(-50%);
-  transition: ease .2s all;
-}
-
-.yaqua-wrapper:hover {
-  transform: scale(1) translateY(-50%) translateX(-40px);
-}
-.yaqua.min .yaqua-wrapper:hover {
-  transform: scale(.8) translateY(-30%);
 }
 
 .yaqua-wrapper .thumb {
@@ -4834,29 +4830,38 @@ body.modal-open .sticky-wrapper {
   background-repeat: no-repeat;
 }
 
-.yaqua .btn-close-yaqua{
+.yaqua .btn-close-yaqua {
   position: absolute;
-  background: rgba(255,255,255,.6);
+  background: rgba(255, 255, 255, .6);
   font-size: 2rem;
   padding: .5rem 1rem;
   color: #fff;
 }
 
 /* HOVER */
-.yaqua.hover .yaqua-wrapper{ 
+.yaqua.hover .yaqua-wrapper {
   transform: scale(.7) translateY(50%);
 }
 
 
 /* MIN */
-
+.yaqua.min{
+  top: unset; 
+  bottom: 0;
+}
+.yaqua.min .btn-close-yaqua{
+  display: none !important;
+}
 .yaqua.min .yaqua-wrapper {
-  width: 105px;
-  right: -3px;
+  width: 90px;
   border-radius: 50%;
-  box-shadow: 0 0 5px #ccc;
-  top: unset !important;
-  bottom: 3rem;
+  box-shadow: 0 0 5px #c3c3c3;
+  overflow: hidden;  
+  animation: translatePosition .5s both;
+}
+.yaqua.min .yaqua-wrapper .yaqua-content{
+  padding: 1.5rem .5rem;
+  height: 90px;
 }
 
 .yaqua.min h1 {
@@ -4875,6 +4880,15 @@ body.modal-open .sticky-wrapper {
   display: none;
 }
 
-.yaqua.min .btn-close-yaqua{
+.yaqua.min .btn-close-yaqua {
   display: none;
+}
+@keyframes yaquaIn {
+  0%   { transform: translate(25rem,-50%); transition: ease all .3s; }
+  100%  { transform: translate(0,-50%); transition: ease all .3s; }  
+}
+@keyframes translatePosition {
+  0%   { transform: translate(25rem,-50%) }
+  50%  { transform: translate(25rem,-9rem) }
+  100%  { transform: translate(-10px,-9rem) }  
 }
