@@ -11,7 +11,8 @@ get_header();
 ?>
 <main class="page-blog">
     <!-- HEADING -->
-    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg)">
+    <?php $img_bg = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : 'https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg'; ?>
+    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(<?= $img_bg?>)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center m-auto">
@@ -106,28 +107,6 @@ get_header();
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3187.0218565415385!2d-77.02208325421014!3d-12.106308090034332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94ab359ca60de6f2!2sGRUPO%203ERIZA!5e0!3m2!1ses!2spe!4v1648659986616!5m2!1ses!2spe" width="100%" height="550" style="border:0;margin:0; padding: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-
-
-    <div id="suscribe" class="suscribe mt-0" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/employee-bg.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h4>¡Únete a nuestro equipo!</h4>
-                        <p class="text-white">Si deseas postular a 3ERIZA te invitamos a visitar nuestra sección de empleos o envíanos un correo a <em>postula@3eriza.pe</em></p>
-                        <div class="line-dec mt-3"></div>
-                    </div>
-                </div>
-                <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-4 m-auto">
-                            <div class="border-first-button m-auto"><a href="mailto:postula@3eriza.pe" class="active">postula@3eriza.pe</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 </main>

@@ -7,7 +7,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
   
-<div id="blog" class="blog">
+<div id="blog" class="page-blog blog">
     <div class="post-heading-cover position-relative" style="z-index: 1050;background-image: url(<?= get_template_directory_uri() ?>/assets/images/quote-bg.png)">
         <div class="container">
             <div class="row">

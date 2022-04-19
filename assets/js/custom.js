@@ -6,6 +6,13 @@
   window.onload = function () {
     // Page loading animation  
     document.getElementById('js-preloader').classList.add('loaded');
+    // State Button Yaqua
+    var stateYaqua = localStorage.getItem('yaquaMin')
+    if(stateYaqua){
+      document.querySelector('.yaqua').classList.add('min')
+    }else{
+      document.querySelector('.yaqua').classList.remove('min')
+    }
   }
 
   if (document.querySelector('.industrias-bar')) {
@@ -15,6 +22,11 @@
       document.querySelector(el.getAttribute('href')).scrollIntoView()
     })
   }
+
+  // Megamenu SHOW
+  $('.mm-nosotros').appendTo('#menu-item-60')
+  $('.mm-servicios').appendTo('#menu-item-59')
+  $('.mm-industrias').appendTo('#menu-item-69')
 
   var siteSticky = function () {
     $(".js-sticky-header").sticky({ topSpacing: 0 });
@@ -115,19 +127,21 @@
 
     if(scroll >= 50){
       document.querySelector('.yaqua').classList.add('min')
-    }else if( scroll <= 0 ){
-      document.querySelector('.yaqua').classList.remove('min')
     }
   });
 
   document.querySelector('.yaqua, .btn-close-yaqua').addEventListener('click', (e) => {
     e.preventDefault()
     var node = e.target.nodeName    
-
+    
     if( e.target.closest('.btn-close-yaqua') ){
+      //save state
+      localStorage.setItem('yaquaMin',true)
       e.target.closest('.yaqua').classList.add('min')
     }else{
       document.querySelector('.yaqua').classList.remove('min')
+      //save state
+      localStorage.setItem('yaquaMin',false)
     }
 
     if(!e.target.closest('.yaqua').classList.contains('min')){

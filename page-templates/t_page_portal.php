@@ -9,7 +9,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
 ?>
 <?= get_header() ?>
 
-<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class="main-banner bg-main wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -32,7 +32,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
                     </div>
                     <div class="col-lg-6">
                         <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/slider.png" alt="">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/banner-home.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -272,6 +272,14 @@ $tree_posts = get_posts(array('numberposts' => 3));
 <div id="suscribe" class="suscribe">
     <div class="container">
         <div class="row">
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+region: "na1",
+portalId: "4934520",
+formId: "9929ad7f-bc51-4dae-8b3e-bedbba2ca80c"
+});
+</script>
             <div class="col-lg-6 offset-lg-3">
                 <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                     <h4>Suscríbete ahora</h4>
@@ -394,7 +402,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
             <div class="col-lg-8 m-auto wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
                 <div class="section-heading">
                     <h6>Entradas del Blog</h6>
-                    <h4>Utimas <em>Publicaciones</em></h4>
+                    <h4>Ultimas <em>Publicaciones</em></h4>
                     <div class="line-dec"></div>
                 </div>
             </div>

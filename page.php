@@ -8,8 +8,6 @@
 ?>
 <?php get_header(); ?>
 
-
-
 <div id="blog" class="page-blog">
     <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
         <?php $img_bg = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/assets/images/default-bg.jpg'; ?>

@@ -48,15 +48,15 @@
                 <div class="col-lg-8 col-sm-8 col-7">
                     <ul class="info">
                         <li><a href="mailto:contacto@3eriza.pe"><i class="fa fa-envelope"></i>contacto@3eriza.pe</a></li>
-                        <li><a href="#"><i class="fa fa-phone"></i>(+511) 5003577</a></li>
+                        <li><a href="tel:5115003577"><i class="fa fa-phone"></i>(+511) 5003577</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-5">
                     <ul class="social-media">
-                        <li><a href="https://www.facebook.com/3ERIZATrabajaConNosotros"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/3eriza/"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="d-none d-md-inline d-lg-inline d-xl-inline d-d-xxl-inline"><a href="mailto:contacto@3eriza.pe"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCuc_BpZPpH8MDupW6dldG9A"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="https://www.facebook.com/3ERIZATrabajaConNosotros" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/3eriza/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="d-none d-md-inline d-lg-inline d-xl-inline d-d-xxl-inline" target="_blank"><a href="mailto:contacto@3eriza.pe"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCuc_BpZPpH8MDupW6dldG9A" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -102,3 +102,79 @@
         </div>
     </div>
     <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Megamenu Start ***** -->
+    <div class="mega-menu mm-nosotros">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4 class="mb-3">NOSOTROS</h4>
+                    <p>Nos renovamos. Conoce más de nuestro
+                        propósito</p>
+                    <p class="bolder">Queremos mejores clientes, con mejores
+                        negocios.</p>
+                </div>
+                <div class="col-lg-4">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="<?= home_url('/nosotros/#misionvision')?>">Nuestra misión y visión</a>
+                        <a class="nav-link" href="<?= home_url('/nosotros/#equipo')?>">Nuestro equipo</a>
+                        <a class="nav-link" href="<?= home_url('/nosotros/#trayectoria')?>"> Nuestra trayectoria</a>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <p>Resposabilidad Social corporativa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mega-menu mm-servicios">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#"><h6 class="mb-3">SERVICIOS</h6></a>
+                    <p>Estamos redefiniendo el contact center
+                        combinando soluciones innovadoras con el
+                        toque humano, la emoción y la empatía de
+                        nuestros empleados</p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="<?= home_url('/interaccion-con-clientes-front-office')?>" class="title"><h6 class="mb-3"> Interacción con clientes - Front Office</h6></a>
+                    <p>Nos encargamos en gestionar las ventas y la
+                        atención de tus clientes</p>
+                </div>
+                <div class="col-lg-3">
+                <a href="<?= home_url('/provision-de-personal-staffing')?>" class="title"><h6 class="mb-3">Provisión de personal - Staffing</h6></a>
+                    <p>Ayudamos a nuestros clientes a contar con talento humano específico, alineado a sus necesidades</p>
+                </div>
+                <div class="col-lg-3">
+                <a href="<?= home_url('/soporte-al-negocio-back-office')?>" class="title"><h6 class="mb-3">Soporte al negocio - back office</h6></a>
+                    <p>Ayudamos a externalizar procesos de negocio apoyándonos en tecnología innovadora</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mega-menu mm-industrias">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6 class="mb-3">INDUSTRIAS</h6>
+                    <p>Especialistas en tu industria</p>
+                </div>
+                <div class="col-lg-4">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="<?= home_url('industrias/#telecomunicaciones')?>">Telco</a>
+                        <a class="nav-link" href="<?= home_url('industrias/#distribucion')?>">Distribución y retail </a>
+                        <a class="nav-link" href="<?= home_url('industrias/#educacion')?>">Educación </a>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="<?= home_url('industrias/#seguros')?>">Seguros</a>
+                        <a class="nav-link" href="<?= home_url('industrias/#automotriz')?>">Automotriz</a>
+                        <a class="nav-link" href="<?= home_url('industrias/#salud')?>">Salud</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Megamenu End ***** -->

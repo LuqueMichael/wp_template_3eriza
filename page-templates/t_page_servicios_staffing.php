@@ -11,7 +11,8 @@ get_header();
 ?>
 <main class="page-blog">
     <!-- HEADING -->
-    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg)">
+    <?php $img_bg = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : 'https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg'; ?>
+    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(<?= $img_bg?>)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center m-auto">
@@ -100,19 +101,19 @@ get_header();
                         <div class="col-lg-4 mb-sm-5">
                             <div class="box-shadow wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"">
                                 <p class=" box-title">Personal Eventual</p>
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/staffing-01.png" alt="">
+                                <img src="http://3eriza.pe/desarrollo/wordpress/wp-content/uploads/2022/04/personl-eventual_m.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-4 mb-sm-5">
                             <div class="box-shadow wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"">
                                 <p class=" box-title">Recepcionista</p>
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/staffing-02.png" alt="">
+                                <img src="http://3eriza.pe/desarrollo/wordpress/wp-content/uploads/2022/04/recepcionistas_m.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-4 mb-sm-5">
                             <div class="box-shadow wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s"">
                                 <p class=" box-title">Mercaderista / Reponedores</p>
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/staffing-03.png" alt="">
+                                <img src="http://3eriza.pe/desarrollo/wordpress/wp-content/uploads/2022/04/mecaderista-reponedores_m.png" alt="">
                             </div>
                         </div>
                     </div>

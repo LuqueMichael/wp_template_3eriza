@@ -34,7 +34,7 @@ get_header();
                         </div>
                         <div class="col-lg-6">
                             <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/slider.png" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/bg-empleos.png" alt="">
                             </div>
                         </div>
                     </div>

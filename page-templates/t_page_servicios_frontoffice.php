@@ -10,8 +10,9 @@ get_header();
 
 ?>
 <main class="page-blog">
+    <?php $img_bg = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : 'https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg'; ?>
     <!-- HEADING -->
-    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg)">
+    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(<?=$img_bg?>)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center m-auto">
@@ -38,7 +39,7 @@ get_header();
                 </div>
                 <div class="col-lg-9 m-auto">
                     <p class="text text-center mb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                    A través de nuestra solución de Staffing, ayudamos a nuestros clientes a contar contar con talento humano especifico alineado a sus necesidades, respetando siempre el marco legal.
+                        A través de nuestra solución de Staffing, ayudamos a nuestros clientes a contar contar con talento humano especifico alineado a sus necesidades, respetando siempre el marco legal.
                     </p>
                 </div>
                 <div class="col-xxl-9 col-lg-12 m-auto">
@@ -126,18 +127,18 @@ get_header();
                                 <div>
                                     <p class="btn btn-subtitle">Atención</p>
                                     <h3>Servicio al cliente presencial</h3>
-                                    <p>Contamos con un equipo con experiencia en el servicio de atención al cliente/comercial capaces de gestionar con eficiencia todo el sistema interno, la excelencia en el trato, así como realizar acciones comerciales de venta de cara a tus clientes y todo ello con un estándar de calidad determinado y unos objetivos comerciales definidos.</p>                                    
+                                    <p>Contamos con un equipo con experiencia en el servicio de atención al cliente/comercial capaces de gestionar con eficiencia todo el sistema interno, la excelencia en el trato, así como realizar acciones comerciales de venta de cara a tus clientes y todo ello con un estándar de calidad determinado y unos objetivos comerciales definidos.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-5">                        
+                    <div class="row mb-5">
                         <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
                             <div class="text-wrapper mb-md-5 wow fadeInLeft animated" data-wow-delay="0.6s" style="visibility: visible;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
                                 <div class="text-end">
                                     <p class="btn btn-subtitle">Contacto</p>
                                     <h3>Contact Center</h3>
-                                    <p>Manejamos diferentes tipo de comunicaciones con sus clientes tales como ventas, atención al cliente, seguimiento, procesamiento de pedidos y utilizamos diferentes canales de comunicación además del teléfono (chat, videollamadas, email, redes sociales).</p>                                    
+                                    <p>Manejamos diferentes tipo de comunicaciones con sus clientes tales como ventas, atención al cliente, seguimiento, procesamiento de pedidos y utilizamos diferentes canales de comunicación además del teléfono (chat, videollamadas, email, redes sociales).</p>
                                 </div>
                             </div>
                         </div>
@@ -152,12 +153,12 @@ get_header();
         </div>
     </div>
 
-    <?= get_template_part('template-parts/content','section-industrias')?>
+    <?= get_template_part('template-parts/content', 'section-industrias') ?>
 
     <!-- FORM CONTACTO -->
     <section id="contacto" class="section contact-section position-relative decoration-util-1">
         <div class="container">
-            <div class="row">                             
+            <div class="row">
                 <div class="col-xl-8 m-auto">
                     <div class="row contact-form-wrapper wow fadeInUp border-0 shadow-util" data-wow-duration="1s" data-wow-delay=".5s">
                         <div class="col-12">

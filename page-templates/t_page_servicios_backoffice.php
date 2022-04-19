@@ -11,7 +11,8 @@ get_header();
 ?>
 <main class="page-blog">
     <!-- HEADING -->
-    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg)">
+    <?php $img_bg = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : 'https://preview.uideck.com/items/essence/img/bg/hero-area-2.jpg'; ?>
+    <div class="post-heading-cover position-relative mb-0" style="z-index: 1050;background-image: url(<?= $img_bg?>)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center m-auto">

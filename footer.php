@@ -68,7 +68,7 @@
 
 <div class="yaqua">
   <div class="yaqua-wrapper">
-    <div class="btn-close-yaqua d-block d-xl-none d-lg-none d-md-none">
+    <div class="btn-close-yaqua">
       <i class="lni lni-close"></i>
     </div>
     <div class="thumb"></div>

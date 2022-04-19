@@ -95,7 +95,7 @@ get_header();
 <div id="blog" class="nosotros-page">
 
     <!-- MISION/VISION -->
-    <section class="section bg-util-yellow">
+    <section id="misionvision" class="section bg-util-yellow">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 m-auto text-center">
@@ -124,7 +124,7 @@ get_header();
 
     <!--- OUR TEAM --->
 
-    <section class="team section">
+    <section id="equipo" class="team section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6 m-auto">
@@ -162,7 +162,7 @@ get_header();
 
 
     <!--- TIMELINE ---->
-    <section class="section bg-util-yellow">
+    <section id="trayectoria" class="section bg-util-yellow">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6 m-auto text-center">
