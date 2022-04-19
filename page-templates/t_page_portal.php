@@ -12,7 +12,8 @@ $tree_posts = get_posts(array('numberposts' => 3));
 <div class="main-banner bg-main wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 ">
+                <div class="bg-holder" style="background-image:url(<?= get_template_directory_uri()?>/assets/images/bg-home.png);background-position:right top;background-size:55%;"></div>
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
                         <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
@@ -32,7 +33,7 @@ $tree_posts = get_posts(array('numberposts' => 3));
                     </div>
                     <div class="col-lg-6">
                         <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/banner-home.png" alt="">
+                            <!--<img src="<?= get_template_directory_uri() ?>/assets/images/banner-home.png" alt="">-->
                         </div>
                     </div>
                 </div>
@@ -272,14 +273,6 @@ $tree_posts = get_posts(array('numberposts' => 3));
 <div id="suscribe" class="suscribe">
     <div class="container">
         <div class="row">
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-<script>
-  hbspt.forms.create({
-region: "na1",
-portalId: "4934520",
-formId: "9929ad7f-bc51-4dae-8b3e-bedbba2ca80c"
-});
-</script>
             <div class="col-lg-6 offset-lg-3">
                 <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                     <h4>Suscríbete ahora</h4>

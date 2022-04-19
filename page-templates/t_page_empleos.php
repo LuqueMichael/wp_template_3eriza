@@ -15,7 +15,7 @@ get_header();
     <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12">                
                     <div class="row">
                         <div class="col-lg-6 align-self-center">
                             <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
@@ -33,9 +33,7 @@ get_header();
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/bg-empleos.png" alt="">
-                            </div>
+                            <div class="bg-holder" style="background-image:url(<?= get_template_directory_uri()?>/assets/images/bg-empleos.png);background-position:right top;background-size:55%;"></div>
                         </div>
                     </div>
                 </div>
@@ -96,58 +94,56 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 m-auto">
-                    <div class="section-heading text-center mb-5 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="section-heading text-center mb-5 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
                         <h4>¿Qué encontrarás?</h4>
                         <div class="line-dec m-auto"></div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-xxl-10 m-auto">
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="img-thumb wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
-                                <img class="img-fluid" src="img/features/img1.png" alt="">
+                            <div class="img-thumb wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <img class="img-fluid" src="<?= get_template_directory_uri()?>/assets/images/empleo/CRECIMIENTO.png" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="text-wrapper wow fadeInRight animated" data-wow-delay="0.6s" style="visibility: visible;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+                            <div class="text-wrapper wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.9s">
                                 <div>
                                     <p class="btn btn-subtitle">Crecimiento</p>
                                     <h3 class="m-0 mb-3">Nuevos retos y reconocimiento por tus labores</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, aut numquam, quisquam non iusto animi dolorum recusandae repellendus dolor, maiores id at quam voluptatum voluptatibus. Voluptas quam perferendis dolorem hic?.</p>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="text-wrapper wow fadeInRight animated" data-wow-delay="0.6s" style="visibility: visible;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+                    <div class="row mb-5">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+                            <div class="text-wrapper wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.9s">
                                 <div>
                                     <p class="btn btn-subtitle">Bienestar</p>
-                                    <h3 class="m-0 mb-3">Convenios y descuentos corporativos</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, aut numquam, quisquam non iusto animi dolorum recusandae repellendus dolor, maiores id at quam voluptatum voluptatibus. Voluptas quam perferendis dolorem hic?.</p>
+                                    <h3 class="m-0 mb-3">Convenios y descuentos corporativos</h3>                                    
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="img-thumb wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
-                                <img class="img-fluid" src="img/features/img1.png" alt="">
+                            <div class="img-thumb wow wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.9s">
+                            <img class="img-fluid" src="<?= get_template_directory_uri()?>/assets/images/empleo/BIENESTAR.png" alt="">
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="img-thumb wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
-                                <img class="img-fluid" src="img/features/img1.png" alt="">
+                            <div class="img-thumb wow wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.9s">
+                            <img class="img-fluid" src="<?= get_template_directory_uri()?>/assets/images/empleo/APRENDIZAJE.png" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="text-wrapper wow fadeInRight animated" data-wow-delay="0.6s" style="visibility: visible;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+                            <div class="text-wrapper wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.9s">
                                 <div>
                                     <p class="btn btn-subtitle">Aprendizaje</p>
-                                    <h3 class="m-0 mb-3">Capacitaciones y así desempeñarse con éxito en tus funciones</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, aut numquam, quisquam non iusto animi dolorum recusandae repellendus dolor, maiores id at quam voluptatum voluptatibus. Voluptas quam perferendis dolorem hic?.</p>
+                                    <h3 class="m-0 mb-3">Capacitaciones y así desempeñarse con éxito en tus funciones</h3>                                    
                                 </div>
                             </div>
                         </div>

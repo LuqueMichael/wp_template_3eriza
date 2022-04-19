@@ -17,7 +17,7 @@ get_header();
             <div class="row">
                 <div class="col-lg-8 text-center m-auto">
                     <div class="section-heading m-0 my-2">
-                        <h1>Interacción Con Clientes Front Office</h1>
+                        <h1>Interacción Con Clientes <em>Front Office</em></h1>
                         <p class="text-white mt-5 ">Tenemos la solución que necesitas en función a tus necesidades.</p>
                     </div>
                     <div class="arrow-down-icon active">
